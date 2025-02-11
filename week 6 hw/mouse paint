@@ -1,0 +1,25 @@
+var toggle = true;
+
+function setup() {
+  createCanvas(800, 300);
+   background(1, 186, 240);
+  
+}
+
+function draw() {
+ 
+  
+  
+  //declare variable
+  var x = mouseX;
+  var y = mouseY;
+  var size = 20;
+  
+  //circle
+  fill (237, 34, 93, 50)
+  noStroke();
+  ellipse(x, y, size, size);
+  
+  
+  
+}

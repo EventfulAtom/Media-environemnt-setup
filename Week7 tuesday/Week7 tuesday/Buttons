@@ -1,0 +1,90 @@
+bgColor = 220
+var sizeX = 30
+var sizeY = 30
+function setup() {
+  createCanvas(500, 400);
+  background(bgColor);
+
+
+//setup red button 
+let redButton;
+redButton = createButton('Red');
+redButton.size (100, 50);
+redButton.position(10,10);
+redButton.style('background:red')
+redButton.mousePressed(changedRed)
+
+
+//setup blue button 
+let blueButton;
+blueButton = createButton('Blue');
+blueButton.size (100, 50);
+blueButton.position(10,70);
+blueButton.style('background:blue');
+blueButton.mousePressed(changedBlue);
+
+
+//setup eraser 
+let clearButton;
+clearButton = createButton('erase');
+clearButton.size (100, 50);
+clearButton.position(10,130);
+clearButton.style('background:white');
+clearButton.mousePressed(changedClear);
+
+//setup reset 
+let resetButton;
+resetButton = createButton('reset');
+resetButton.size (100, 50);
+resetButton.position(10,190);
+resetButton.style('background:bgColor');
+resetButton.mousePressed(changedReset);
+
+
+//setup Big 
+let bigButton;
+bigButton = createButton('Big');
+bigButton.size (100, 50);
+bigButton.position(10,250);
+bigButton.style('background:bgColor');
+bigButton.mousePressed(sizeBig);
+
+//setup small 
+let smallButton;
+smallButton = createButton('Small');
+smallButton.size (100, 50);
+smallButton.position(10,310);
+smallButton.style('background:bgColor');
+smallButton.mousePressed(sizeSmall);
+}
+
+
+function changedRed(){
+  fill('Red')
+}
+
+function changedBlue(){
+  fill('Blue')
+}
+  function changedClear(){
+  fill('bgColor')
+}
+function changedReset(){
+  fill(bgColor)
+  background('bgColor')
+}
+function sizeBig(){
+  var sizeX = 100
+  var sizeY = 100
+}
+function sizeSmall(){
+  var sizeX = 10
+  var sizeY = 10
+}
+function draw() {
+  noStroke()
+  if(mouseIsPressed){
+  ellipse (mouseX, mouseY, sizeX, sizeY)
+  }
+  else{}
+}

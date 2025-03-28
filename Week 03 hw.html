@@ -1,15 +1,46 @@
+var words = ["I", "am", "currently", "a", "IMED", "major", "in", "the", "AMP", "concentration.", "One", "of", "my", "favorite", "classes", "I", "currently", "have", "is", "forensics.", "I", "took", "that", "class", "in", "high", "school", "and", "I", "loved", "it", "but", "I", "do", "not", "think", "I", "would", "like", "it", "as", "a", "major", "due", "to", "some", "extreme", "cases", "they", "have", "as", "a", "forensic", "scientist."];
+var colors = [
+  [31, 32, 65],
+  [75, 63, 114],
+  [255, 200, 87],
+  [17, 157, 164],
+  [25, 100, 126],
+];
+
+var circles = []; 
+
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(800, 300);
+  textAlign(CENTER, CENTER);
+  frameRate(2);
+  
+ 
+  for (var i = 0; i < 100; i = i + 1) {
+    circles.push({
+      x: random(width),
+      y: random(height),
+      size: random(10, 50), 
+      color: [random(255), random(255), random(255)], 
+    });
+  }
 }
 
 function draw() {
-  background(226, 213, 135);
-  fill(119 , 87 , 159)
-  textStyle(BOLDITALIC)
-  textFont('Courier New' , 32)
-  text('Harrisburg University' , 50, 50);
-  fill(255, 255, 255)
-  textStyle(NORMAL)
-  textFont('Courier New' , 14)
-  text('I am currently a IMED major in the AMP concentration.  One of my favorite classes I currently have is forensics. I took that class in high school and I loved it but I do not think I would like it as a major due to some extreme cases they have as a forensic scientist.' ,100, 100 , 600)
+  var currentIndex = (frameCount - 1) % words.length;
+  var currentWord = words[currentIndex];
+  var currentColor = colors[currentIndex % colors.length];
+
+  background(currentColor);
+
+ 
+  for (var i = 0; i < circles.length; i = i + 1) {
+    fill(circles[i].color);
+    noStroke();
+    ellipse(circles[i].x, circles[i].y, circles[i].size);
+  }
+
+
+  fill(255);
+  textSize(45);
+  text(currentWord, width / 2, height / 2);
 }

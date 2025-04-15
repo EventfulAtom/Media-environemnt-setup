@@ -1,23 +1,20 @@
-# Click the Circle!
+# Space dodger
 
 # What is it
-- This game is a clicker game where you click on the pink circle and get a certain score in a minute
+- This game is dodge game where you are a spaceship dodging astroids 
 
 # How to Play
-
-- A pink circle appears randomly on the screen.
-- Click the circle to earn points.
-- You have 60 seconds to score as many points as you can.
-- If you score 90 or more points, you win!
-- If you score less than 90, you lose.
+- Grey circles appear randomly on the screen.
+- Move the spaceship (triangle) move left and right to doge the astroids
+- You have 60 seconds to survive
+- If you survive, you win!
+- If you crash, you lose!
 
 # Controls
-
-The only control is clicking left click with the mouse button
+- the only two buttons are the left arrow and the right arrow
 
 # Game Features
 
 - One-minute timer
 - Random circle positions
-- Score tracking
 - Win/Lose screen

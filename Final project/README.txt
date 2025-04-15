@@ -8,8 +8,8 @@
 - A pink circle appears randomly on the screen.
 - Click the circle to earn points.
 - You have 60 seconds to score as many points as you can.
-- If you score 100 or more points, you win!
-- If you score less than 100, you lose.
+- If you score 90 or more points, you win!
+- If you score less than 90, you lose.
 
 # Controls
 

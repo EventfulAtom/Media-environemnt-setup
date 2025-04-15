@@ -1,18 +1,23 @@
-# Dodge the Blocks
+# Click the Circle!
 
-# Description
-Dodge the Blocks is a super simple 1-minute survival game made with p5.js. Avoid falling blocks and survive for 60 seconds!
+# What is it
+- This game is a clicker game where you click on the pink circle and get a certain score in a minute
+
+# How to Play
+
+- A pink circle appears randomly on the screen.
+- Click the circle to earn points.
+- You have 60 seconds to score as many points as you can.
+- If you score 100 or more points, you win!
+- If you score less than 100, you lose.
 
 # Controls
-- Use the LEFT and RIGHT arrow keys to move your green square left or right.
 
-# Gameplay
-- A red block falls from the top.
-- Move to dodge the falling block.
-- If it touches you, the game ends immediately.
+The only control is clicking left click with the mouse button
 
-# Win/Lose Condition
-- You WIN if you survive for 60 seconds.
-- You LOSE if a block hits you before time runs out.
+# Game Features
 
-Can you dodge long enough to survive?
+- One-minute timer
+- Random circle positions
+- Score tracking
+- Win/Lose screen
